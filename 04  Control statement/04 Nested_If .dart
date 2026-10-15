@@ -7,15 +7,53 @@
                 syntax :- 
                       if(condition){
                        -----
-            -----
-          } else {
-              if(condition){
-                  ----
-              } else {
-                  ----
-              }
-          }
+                       -----
+                      } 
+                      else {
+                      if(condition){
+                       -----
+                      } 
+                      else {
+                        ----
+                      }
+                  }
 
 
 
 */
+/* WAP to input four numbers and find largest no using nested if */
+import 'dart:io';
+
+void main() {
+  int a, b, c, d;
+  print("Enter four numbers");
+  a = int.parse(stdin.readLineSync()!);
+  b = int.parse(stdin.readLineSync()!);
+  c = int.parse(stdin.readLineSync()!);
+  d = int.parse(stdin.readLineSync()!);
+  if (a > b) {
+    if (a > c) {
+      if (a > d)
+        print("$a is greater");
+      else
+        print("$d is greater");
+    } else {
+      if (c > d)
+        print("$c is greater");
+      else
+        print('$d is greater');
+    }
+  } else {
+    if (b > c) {
+      if (b > d)
+        print("$b is greater");
+      else
+        print("$d is greater");
+    } else {
+      if (c > d)
+        print("$c is greater");
+      else
+        print("$d is greater");
+    }
+  }
+}
