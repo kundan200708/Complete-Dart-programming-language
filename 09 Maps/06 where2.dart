@@ -8,7 +8,6 @@ void main() {
     "raj": 69,
     "john": 15,
   };
-
   mathMarks.removeWhere((key, value) => value < 32);
 
   print(mathMarks);
