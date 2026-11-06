@@ -4,7 +4,7 @@ class Student {
   int? age;
 
   // Constructor
-  Student({String? name = "John", int? age = 0}) {
+  Student({String? name = "John", int? age = 20}) {
     this.name = name;
     this.age = age;
   }
